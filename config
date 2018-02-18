@@ -62,7 +62,7 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 exec --no-startup-id nitrogen --restore
 #exec --no-startup-id compton --menu-opacity=0.9 -c -f --blur-background --config /home/frank/.config/compton.conf
 #exec --no-startup-id mopidy
-#exec --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id $HOME/.config/polybar/launch.sh
 #exec --no-startup-id $HOME/.config/lemonbar/launch.sh
 #exec --no-startup-id xfce4-panel
 exec --no-startup-id xset s off -dpms
@@ -76,7 +76,7 @@ exec --no-startup-id i3-msg 'workspace 2; exec urxvt -sh 30 -fn "xft:Knack Nerd 
 exec --no-startup-id wal -i "$(< "${HOME}/.cache/wal/wal")"
 exec_always sudo $HOME/.config/i3/restart-controller.sh
 exec_always --no-startup-id xautolock -time 25 -locker 'lock -pf GohuFont-for-Powerline'
-exec_always --no-startup-id $HOME/.config/lemonbar/i3_lemonbar.sh
+#exec_always --no-startup-id $HOME/.config/lemonbar/i3_lemonbar.sh
 exec_always --no-startup-id $HOME/.config/i3/run_wal.sh
 exec --no-startup-id cronwhip
 
